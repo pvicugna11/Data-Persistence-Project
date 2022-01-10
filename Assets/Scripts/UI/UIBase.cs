@@ -12,8 +12,13 @@ public class UIBase : MonoBehaviour
         DisplayBestScore();
     }
 
-    public void DisplayBestScore()
+    protected virtual void DisplayBestScore()
     {
-        BestScoreText.text = $"Best Score : {BestScoreManager.Instance.PlayerName} : {BestScoreManager.Instance.HighScore}";
+        BestScoreText.text = TextTemplate(BestScoreManager.Instance.PlayerNames[0], BestScoreManager.Instance.HighScores[0]);
+    }
+
+    protected string TextTemplate(string playerName, int highScore)
+    {
+        return $"Best Score : {playerName} : {highScore}";
     }
 }

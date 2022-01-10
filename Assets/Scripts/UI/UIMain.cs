@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIMain : UIBase
 {
@@ -10,5 +11,10 @@ public class UIMain : UIBase
     {
         base.Start();
         Manager.onBestScoreUpdated += DisplayBestScore;
+    }
+
+    public void BackToStartMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

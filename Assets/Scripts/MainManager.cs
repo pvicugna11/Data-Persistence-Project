@@ -89,6 +89,6 @@ public class MainManager : MonoBehaviour
 
     private bool IsBestScore()
     {
-        return m_Points > BestScoreManager.Instance.HighScore;
+        return m_Points > BestScoreManager.Instance.HighScores[BestScoreManager.Instance.MaxSaveNum - 1];
     }
 }
