@@ -9,11 +9,6 @@ public class UIHighScore : UIBase
     public Text TextPrefab;
     public Transform Content;
 
-    public void BackToStartMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
-
     protected override void DisplayBestScore()
     {
         base.DisplayBestScore();

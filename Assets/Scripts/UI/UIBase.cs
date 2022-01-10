@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIBase : MonoBehaviour
 {
@@ -20,5 +21,25 @@ public class UIBase : MonoBehaviour
     protected string TextTemplate(string playerName, int highScore)
     {
         return $"Best Score : {playerName} : {highScore}";
+    }
+
+    public void StartStartMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void StartMain()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void StartHighScore()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void StartSettings()
+    {
+        SceneManager.LoadScene(3);
     }
 }

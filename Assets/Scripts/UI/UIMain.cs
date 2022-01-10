@@ -12,9 +12,4 @@ public class UIMain : UIBase
         base.Start();
         Manager.onBestScoreUpdated += DisplayBestScore;
     }
-
-    public void BackToStartMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
 }

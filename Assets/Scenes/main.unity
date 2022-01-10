@@ -1283,8 +1283,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2137539499}
-        m_TargetAssemblyTypeName: UIMain, Assembly-CSharp
-        m_MethodName: BackToStartMenu
+        m_TargetAssemblyTypeName: UIBase, Assembly-CSharp
+        m_MethodName: StartStartMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

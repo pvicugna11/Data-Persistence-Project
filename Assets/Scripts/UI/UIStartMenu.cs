@@ -14,16 +14,6 @@ public class UIStartMenu : UIBase
         MainManager.PlayerName = playerNametext.text;
     }
 
-    public void StartMain()
-    {
-        SceneManager.LoadScene(1);
-    }
-
-    public void StartHighScore()
-    {
-        SceneManager.LoadScene(2);
-    }
-
     public void Quit()
     {
 #if UNITY_EDITOR
